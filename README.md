@@ -1,4 +1,4 @@
-# metroAnalisis
+# MetroAnalisis
 
 El objetivo del estudio es estimar el volumen de pasajeros en los próximo días del Metro de Madrid, teniendo en cuenta datos metereológicos y calendario de la Comunida de Madrid (CAM), los datos de volumen de pasajeros no son reales, han sido estraidos de un conjunto de datos de la web UCI de volumen de tráfico en el metro de Minneapolis
 
@@ -43,3 +43,4 @@ El conjunto final tomará el aspecto:
     - datosClimatología (todos agrupados y tomando la media de las 3 estaciones de la ciudad de madrid)
     - trafficVolume
 
+Hemos creado una BD por si quisiesemos ir insertando datos.
