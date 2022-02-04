@@ -33,6 +33,8 @@ DATOS:
 Vamos a realizar un dataframe especial para este estudio, donde agruparemos el volumen de tráfico por día y uniremos por fecha con el calendario y la climatología (tambien agrupada por dia, tomando la media de las 3 estaciones de la ciudad de Madrid)
 
 El conjunto final tomará el aspecto:
+    
+    DATOSFINAL:
     - dia
     - diaSemana
     - laborable

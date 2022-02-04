@@ -24,4 +24,4 @@ for i in [2,3,4,5,6,7,8]:
         temperaturaMadrid = temperaturaMadrid.append(aux)
 
 
-temperaturaMadrid.sort_values(by = 'fecha').to_csv('./data/temperaturaMadrid20122018.csv')
+temperaturaMadrid.sort_values(by = 'fecha').to_csv('../data/temperaturaMadrid20122018.csv')
