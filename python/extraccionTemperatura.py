@@ -12,10 +12,11 @@ columns = ['fecha', 'indicativo', 'nombre', 'provincia', 'altitud', 'tmed', 'pre
 temperaturaMadrid = pd.DataFrame(columns= columns)
 
 
-for i in [2,3,4,5,6,7,8]:
+
+for i in [12,13,14,15,16,17,18,19,20,21]:
     for estacion in estaciones:
-        f_inicio = f'201{i}-01-01T00:00:00UTC'
-        f_fin = f'201{i}-12-31T23:59:59UTC'
+        f_inicio = f'20{i}-01-01T00:00:00UTC'
+        f_fin = f'20{i}-12-31T23:59:59UTC'
         url = f'https://opendata.aemet.es/opendata/api/valores/climatologicos/diarios/datos/fechaini/{f_inicio}/fechafin/{f_fin}/estacion/{estacion}/?api_key={key}'
         path= f'./data/tiempoMadrid201{i}.csv'
         r = requests.get(url)
@@ -24,4 +25,4 @@ for i in [2,3,4,5,6,7,8]:
         temperaturaMadrid = temperaturaMadrid.append(aux)
 
 
-temperaturaMadrid.sort_values(by = 'fecha').to_csv('../data/temperaturaMadrid20122018.csv')
+temperaturaMadrid.sort_values(by = 'fecha').to_csv('../data/temperaturaMadrid20122021.csv', index = False)

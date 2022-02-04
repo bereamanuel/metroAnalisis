@@ -1,11 +1,6 @@
 SELECT *
 FROM calendario as C 
-LEFT JOIN ( 
-    SELECT CAST(DATE_TIME, DATE) AS FECHA,
-            SUM(traffic_volume) AS TRAFFIC_VOLUMEN
-    FROM metro
-    GROUP BY FECHA)
-     AS M ON C.FECHA=M.FECHA
+LEFT JOIN metro AS M ON C.FECHA=M.FECHA
 LEFT JOIN (
     SELECT FECHA,
             PROVINCIA,
