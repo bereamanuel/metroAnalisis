@@ -13,7 +13,7 @@ temperaturaMadrid = pd.DataFrame(columns= columns)
 
 
 
-for i in [12,13,14,15,16,17,18,19,20,21]:
+for i in ['00','01','02','03','04','05','06','07','08','09','10','11','12','13','14','15','16','17','18','19']:
     for estacion in estaciones:
         f_inicio = f'20{i}-01-01T00:00:00UTC'
         f_fin = f'20{i}-12-31T23:59:59UTC'
@@ -25,4 +25,4 @@ for i in [12,13,14,15,16,17,18,19,20,21]:
         temperaturaMadrid = temperaturaMadrid.append(aux)
 
 
-temperaturaMadrid.sort_values(by = 'fecha').to_csv('../data/temperaturaMadrid20122021.csv', index = False)
+temperaturaMadrid.sort_values(by = 'fecha').to_csv('./data/temperaturaMadrid.csv', index = False)
