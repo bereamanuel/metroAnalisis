@@ -24,3 +24,12 @@ def boxplots_algorithms(results, names):
     plt.boxplot(results)
     plt.xticks(range(1,len(names)+1), names)
     plt.show()
+
+
+def difference(dataset, interval=1):
+	diff = list()
+	for i in range(interval, len(dataset)):
+		value = dataset[i] - dataset[i - interval]
+		diff.append(value)
+	return pd.Series(diff)
+# https://machinelearningmastery.com/difference-time-series-dataset-python/
