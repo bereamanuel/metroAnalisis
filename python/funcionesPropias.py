@@ -25,3 +25,19 @@ def boxplots_algorithms(results, names):
     plt.xticks(range(1,len(names)+1), names)
     plt.show()
 
+
+def mediasMoviles(df,n):
+    c = df.rolling(n).mean().fillna(method = 'bfill')
+    return c
+
+def desvestMovil(df,n):
+    c = df.rolling(n).std().fillna(method = 'bfill')
+    return c
+
+def medianMovil(df,n):
+    c = df.rolling(n).median().fillna(method = 'bfill')
+    return c
+
+def diffDF(df,n):
+    c = df.diff(n).fillna(method = 'bfill')
+    return c

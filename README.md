@@ -28,12 +28,36 @@ Vamos a realizar un dataframe especial para este estudio, donde agruparemos el v
 El conjunto final tomará el aspecto:
     
     DATOSFINAL:
-    - dia
-    - diaSemana
-    - laborable
-    - tipoFestividad
-    - nombreFestividad
-    - datosClimatología (todos agrupados y tomando la media de las 3 estaciones de la ciudad de madrid)
-    - trafficVolume
+    - volumenMetro: Volumen de pasajeros
+    - tmed: Temperatura media mensual
+    - prec: precipitación media mensual
+    - tmin: Temperatura mínima media mensual
+    - tmax: Temperatura máxima media mensual
+    - dir: media de la dirección del viento
+    - velmedia: Velocidad media del viento
+    - racha: Racha máxima media mensual
+    - presMax: presión máxima media mensual
+    - presMin: presión mínima media mensual
+    - tmedStd: desviación típica de la temperatura media mensual
+    - precStd: desviación típica de la precipitación media mensual
+    - tminStd: desviación típica de la temperatura mínima media mensual
+    - tmaxStd: desviación típica de la temperatura máxima media mensual
+    - dirStd: desviación típica de la media de la dirección del viento
+    - velmediaStd: desviación típica de la velocidad media del viento
+    - rachaStd: desviación típica de la media de rachas máximas medias mensuales
+    - presMaxStd: desviación típica de la presión máxima media mensual
+    - presMinStd: desviación típica de la presión mínima media mensual
+    - volumenMetroMean6: media móvil 6 periodos del volumen de pasajeros
+    - volumenMetroMean12: media móvil 12 periodos del volumen de pasajeros
+    - volumenMetroDesv6: desviación típica móvil 6 periodos del volumen de pasajeros
+    - volumenMetroDesv12: desviación típica móvil 12 periodos del volumen de pasajeros
+    - volumenMetroMedi6: mediana móvil 6 periodos del volumen de pasajeros
+    - volumenMetroMedi12: mediana móvil 12 periodos del volumen de pasajeros
+    - volumenMetroDiff6: serie diferenciada a 6 periodos del volumen de pasajeros
+    - volumenMetroDiff12: serie diferenciada a 12 periodos del volumen de pasajeros
 
-Hemos creado una BD por si quisiesemos ir insertando datos.
+Además tendremos las predicciones:
+    
+    PREDICCIONES:
+    - F1: fecha
+    - F2: predicciones

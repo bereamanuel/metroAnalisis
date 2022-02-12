@@ -1,0 +1,2230 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20214.22.0108.1039                               -->
+<workbook original-version='18.1' source-build='2021.4.3 (20214.22.0108.1039)' source-platform='win' version='18.1' xml:base='https://public.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <repository-location id='AnlisisMtrodemadrid' path='/workbooks' revision='1.0' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <style>
+    <style-rule element='all'>
+      <format attr='font-family' value='Helvetica LT Std' />
+    </style-rule>
+  </style>
+  <datasources>
+    <datasource caption='dfFinal' inline='true' name='federated.1c7e4xn0t7zkg810z0yjt1t3gywp' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='dfFinal' name='textscan.14s6vep09xgj9713ffbxp0ricv71'>
+            <connection class='textscan' directory='D:/TFM/metro/metroAnalisis/data' filename='dfFinal.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.14s6vep09xgj9713ffbxp0ricv71' name='dfFinal.csv' table='[dfFinal#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='date' name='fecha' ordinal='0' />
+            <column datatype='real' name='Total viajeros' ordinal='1' />
+            <column datatype='integer' name='mes_x' ordinal='2' />
+            <column datatype='integer' name='ano_x' ordinal='3' />
+            <column datatype='real' name='tmed' ordinal='4' />
+            <column datatype='real' name='tmin' ordinal='5' />
+            <column datatype='real' name='tmax' ordinal='6' />
+            <column datatype='real' name='dir' ordinal='7' />
+            <column datatype='real' name='velmedia' ordinal='8' />
+            <column datatype='real' name='racha' ordinal='9' />
+            <column datatype='real' name='presMax' ordinal='10' />
+            <column datatype='real' name='presMin' ordinal='11' />
+            <column datatype='real' name='sol' ordinal='12' />
+            <column datatype='real' name='tmedStd' ordinal='13' />
+            <column datatype='real' name='tminStd' ordinal='14' />
+            <column datatype='real' name='tmaxStd' ordinal='15' />
+            <column datatype='real' name='dirStd' ordinal='16' />
+            <column datatype='real' name='velmediaStd' ordinal='17' />
+            <column datatype='real' name='rachaStd' ordinal='18' />
+            <column datatype='real' name='presMaxStd' ordinal='19' />
+            <column datatype='real' name='presMinStd' ordinal='20' />
+            <column datatype='real' name='solStd' ordinal='21' />
+            <column datatype='integer' name='mes_y' ordinal='22' />
+            <column datatype='integer' name='ano_y' ordinal='23' />
+            <column datatype='real' name='festividad' ordinal='24' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.14s6vep09xgj9713ffbxp0ricv71' name='dfFinal.csv' table='[dfFinal#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+            <column datatype='date' name='fecha' ordinal='0' />
+            <column datatype='real' name='Total viajeros' ordinal='1' />
+            <column datatype='integer' name='mes_x' ordinal='2' />
+            <column datatype='integer' name='ano_x' ordinal='3' />
+            <column datatype='real' name='tmed' ordinal='4' />
+            <column datatype='real' name='tmin' ordinal='5' />
+            <column datatype='real' name='tmax' ordinal='6' />
+            <column datatype='real' name='dir' ordinal='7' />
+            <column datatype='real' name='velmedia' ordinal='8' />
+            <column datatype='real' name='racha' ordinal='9' />
+            <column datatype='real' name='presMax' ordinal='10' />
+            <column datatype='real' name='presMin' ordinal='11' />
+            <column datatype='real' name='sol' ordinal='12' />
+            <column datatype='real' name='tmedStd' ordinal='13' />
+            <column datatype='real' name='tminStd' ordinal='14' />
+            <column datatype='real' name='tmaxStd' ordinal='15' />
+            <column datatype='real' name='dirStd' ordinal='16' />
+            <column datatype='real' name='velmediaStd' ordinal='17' />
+            <column datatype='real' name='rachaStd' ordinal='18' />
+            <column datatype='real' name='presMaxStd' ordinal='19' />
+            <column datatype='real' name='presMinStd' ordinal='20' />
+            <column datatype='real' name='solStd' ordinal='21' />
+            <column datatype='integer' name='mes_y' ordinal='22' />
+            <column datatype='integer' name='ano_y' ordinal='23' />
+            <column datatype='real' name='festividad' ordinal='24' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[dfFinal.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='debit-close-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='debit-open-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fecha</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[fecha]</local-name>
+            <parent-name>[dfFinal.csv]</parent-name>
+            <remote-alias>fecha</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dfFinal.csv_64A0743775E941D4A85CAF6EA4AFB7F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Total viajeros</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Total viajeros]</local-name>
+            <parent-name>[dfFinal.csv]</parent-name>
+            <remote-alias>Total viajeros</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dfFinal.csv_64A0743775E941D4A85CAF6EA4AFB7F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mes_x</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[mes_x]</local-name>
+            <parent-name>[dfFinal.csv]</parent-name>
+            <remote-alias>mes_x</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dfFinal.csv_64A0743775E941D4A85CAF6EA4AFB7F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ano_x</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ano_x]</local-name>
+            <parent-name>[dfFinal.csv]</parent-name>
+            <remote-alias>ano_x</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dfFinal.csv_64A0743775E941D4A85CAF6EA4AFB7F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tmed</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[tmed]</local-name>
+            <parent-name>[dfFinal.csv]</parent-name>
+            <remote-alias>tmed</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dfFinal.csv_64A0743775E941D4A85CAF6EA4AFB7F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tmin</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[tmin]</local-name>
+            <parent-name>[dfFinal.csv]</parent-name>
+            <remote-alias>tmin</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dfFinal.csv_64A0743775E941D4A85CAF6EA4AFB7F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tmax</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[tmax]</local-name>
+            <parent-name>[dfFinal.csv]</parent-name>
+            <remote-alias>tmax</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dfFinal.csv_64A0743775E941D4A85CAF6EA4AFB7F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dir</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[dir]</local-name>
+            <parent-name>[dfFinal.csv]</parent-name>
+            <remote-alias>dir</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dfFinal.csv_64A0743775E941D4A85CAF6EA4AFB7F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>velmedia</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[velmedia]</local-name>
+            <parent-name>[dfFinal.csv]</parent-name>
+            <remote-alias>velmedia</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dfFinal.csv_64A0743775E941D4A85CAF6EA4AFB7F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>racha</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[racha]</local-name>
+            <parent-name>[dfFinal.csv]</parent-name>
+            <remote-alias>racha</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dfFinal.csv_64A0743775E941D4A85CAF6EA4AFB7F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>presMax</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[presMax]</local-name>
+            <parent-name>[dfFinal.csv]</parent-name>
+            <remote-alias>presMax</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dfFinal.csv_64A0743775E941D4A85CAF6EA4AFB7F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>presMin</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[presMin]</local-name>
+            <parent-name>[dfFinal.csv]</parent-name>
+            <remote-alias>presMin</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dfFinal.csv_64A0743775E941D4A85CAF6EA4AFB7F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>sol</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[sol]</local-name>
+            <parent-name>[dfFinal.csv]</parent-name>
+            <remote-alias>sol</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dfFinal.csv_64A0743775E941D4A85CAF6EA4AFB7F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tmedStd</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[tmedStd]</local-name>
+            <parent-name>[dfFinal.csv]</parent-name>
+            <remote-alias>tmedStd</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dfFinal.csv_64A0743775E941D4A85CAF6EA4AFB7F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tminStd</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[tminStd]</local-name>
+            <parent-name>[dfFinal.csv]</parent-name>
+            <remote-alias>tminStd</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dfFinal.csv_64A0743775E941D4A85CAF6EA4AFB7F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tmaxStd</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[tmaxStd]</local-name>
+            <parent-name>[dfFinal.csv]</parent-name>
+            <remote-alias>tmaxStd</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dfFinal.csv_64A0743775E941D4A85CAF6EA4AFB7F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dirStd</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[dirStd]</local-name>
+            <parent-name>[dfFinal.csv]</parent-name>
+            <remote-alias>dirStd</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dfFinal.csv_64A0743775E941D4A85CAF6EA4AFB7F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>velmediaStd</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[velmediaStd]</local-name>
+            <parent-name>[dfFinal.csv]</parent-name>
+            <remote-alias>velmediaStd</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dfFinal.csv_64A0743775E941D4A85CAF6EA4AFB7F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>rachaStd</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[rachaStd]</local-name>
+            <parent-name>[dfFinal.csv]</parent-name>
+            <remote-alias>rachaStd</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dfFinal.csv_64A0743775E941D4A85CAF6EA4AFB7F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>presMaxStd</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[presMaxStd]</local-name>
+            <parent-name>[dfFinal.csv]</parent-name>
+            <remote-alias>presMaxStd</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dfFinal.csv_64A0743775E941D4A85CAF6EA4AFB7F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>presMinStd</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[presMinStd]</local-name>
+            <parent-name>[dfFinal.csv]</parent-name>
+            <remote-alias>presMinStd</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dfFinal.csv_64A0743775E941D4A85CAF6EA4AFB7F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>solStd</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[solStd]</local-name>
+            <parent-name>[dfFinal.csv]</parent-name>
+            <remote-alias>solStd</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dfFinal.csv_64A0743775E941D4A85CAF6EA4AFB7F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mes_y</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[mes_y]</local-name>
+            <parent-name>[dfFinal.csv]</parent-name>
+            <remote-alias>mes_y</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dfFinal.csv_64A0743775E941D4A85CAF6EA4AFB7F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ano_y</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ano_y]</local-name>
+            <parent-name>[dfFinal.csv]</parent-name>
+            <remote-alias>ano_y</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dfFinal.csv_64A0743775E941D4A85CAF6EA4AFB7F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>festividad</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[festividad]</local-name>
+            <parent-name>[dfFinal.csv]</parent-name>
+            <remote-alias>festividad</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dfFinal.csv_64A0743775E941D4A85CAF6EA4AFB7F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='media_10' datatype='real' name='[Total viajeros (copia)_1218786651152556032]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='WINDOW_AVG(sum([Total viajeros]), -10,0)'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column datatype='real' name='[Total viajeros]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='dfFinal.csv' datatype='table' name='[__tableau_internal_object_id__].[dfFinal.csv_64A0743775E941D4A85CAF6EA4AFB7F5]' role='measure' type='quantitative' />
+      <column caption='Ano X' datatype='integer' name='[ano_x]' role='measure' type='quantitative' />
+      <column caption='Ano Y' datatype='integer' hidden='true' name='[ano_y]' role='measure' type='quantitative' />
+      <column caption='Dir Std' datatype='real' name='[dirStd]' role='measure' type='quantitative' />
+      <column caption='Dir' datatype='real' name='[dir]' role='measure' type='quantitative' />
+      <column caption='Fecha' datatype='date' name='[fecha]' role='dimension' type='ordinal' />
+      <column caption='Festividad' datatype='real' name='[festividad]' role='measure' type='quantitative' />
+      <column caption='Mes X' datatype='integer' name='[mes_x]' role='measure' type='quantitative' />
+      <column caption='Mes Y' datatype='integer' hidden='true' name='[mes_y]' role='measure' type='quantitative' />
+      <column caption='Pres Max Std' datatype='real' name='[presMaxStd]' role='measure' type='quantitative' />
+      <column caption='Pres Max' datatype='real' name='[presMax]' role='measure' type='quantitative' />
+      <column caption='Pres Min Std' datatype='real' name='[presMinStd]' role='measure' type='quantitative' />
+      <column caption='Pres Min' datatype='real' name='[presMin]' role='measure' type='quantitative' />
+      <column caption='Racha Std' datatype='real' name='[rachaStd]' role='measure' type='quantitative' />
+      <column caption='Racha' datatype='real' name='[racha]' role='measure' type='quantitative' />
+      <column caption='Sol Std' datatype='real' name='[solStd]' role='measure' type='quantitative' />
+      <column caption='Sol' datatype='real' name='[sol]' role='measure' type='quantitative' />
+      <column caption='Tmax Std' datatype='real' name='[tmaxStd]' role='measure' type='quantitative' />
+      <column caption='Tmax' datatype='real' name='[tmax]' role='measure' type='quantitative' />
+      <column caption='Tmed Std' datatype='real' name='[tmedStd]' role='measure' type='quantitative' />
+      <column caption='Tmed' datatype='real' name='[tmed]' role='measure' type='quantitative' />
+      <column caption='Tmin Std' datatype='real' name='[tminStd]' role='measure' type='quantitative' />
+      <column caption='Tmin' datatype='real' name='[tmin]' role='measure' type='quantitative' />
+      <column caption='Velmedia Std' datatype='real' name='[velmediaStd]' role='measure' type='quantitative' />
+      <column caption='Velmedia' datatype='real' name='[velmedia]' role='measure' type='quantitative' />
+      <column-instance column='[Forecast Indicator]' derivation='None' forecast-column-base='[Forecast Indicator]' forecast-column-type='forecast-indicator' name='[none:Forecast Indicator:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Total viajeros]' derivation='Sum' name='[sum:Total viajeros:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Total viajeros (copia)_1218786651152556032]' derivation='User' name='[usr:Total viajeros (copia)_1218786651152556032:qk]' pivot='key' type='quantitative'>
+        <table-calc ordering-type='Rows' />
+      </column-instance>
+      <column-instance column='[fecha]' derivation='Year' name='[yr:fecha:ok]' pivot='key' type='ordinal' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='es_ES' class='hyper' dbname='D:/TFM/metro/metroAnalisis/tableau/dfFinal.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='02/12/2022 09:14:31 AM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='dfFinal' increment-value='%null%' refresh-type='create' rows-inserted='396' timestamp-start='2022-02-12 09:14:30.685' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>fecha</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[fecha]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>fecha</remote-alias>
+              <ordinal>0</ordinal>
+              <family>dfFinal.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>396</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dfFinal.csv_64A0743775E941D4A85CAF6EA4AFB7F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Total viajeros</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Total viajeros]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Total viajeros</remote-alias>
+              <ordinal>1</ordinal>
+              <family>dfFinal.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>394</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dfFinal.csv_64A0743775E941D4A85CAF6EA4AFB7F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>mes_x</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[mes_x]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>mes_x</remote-alias>
+              <ordinal>2</ordinal>
+              <family>dfFinal.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dfFinal.csv_64A0743775E941D4A85CAF6EA4AFB7F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ano_x</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[ano_x]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ano_x</remote-alias>
+              <ordinal>3</ordinal>
+              <family>dfFinal.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dfFinal.csv_64A0743775E941D4A85CAF6EA4AFB7F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tmed</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[tmed]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tmed</remote-alias>
+              <ordinal>4</ordinal>
+              <family>dfFinal.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>241</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dfFinal.csv_64A0743775E941D4A85CAF6EA4AFB7F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tmin</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[tmin]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tmin</remote-alias>
+              <ordinal>5</ordinal>
+              <family>dfFinal.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>241</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dfFinal.csv_64A0743775E941D4A85CAF6EA4AFB7F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tmax</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[tmax]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tmax</remote-alias>
+              <ordinal>6</ordinal>
+              <family>dfFinal.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>241</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dfFinal.csv_64A0743775E941D4A85CAF6EA4AFB7F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>dir</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[dir]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>dir</remote-alias>
+              <ordinal>7</ordinal>
+              <family>dfFinal.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>237</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dfFinal.csv_64A0743775E941D4A85CAF6EA4AFB7F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>velmedia</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[velmedia]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>velmedia</remote-alias>
+              <ordinal>8</ordinal>
+              <family>dfFinal.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>234</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dfFinal.csv_64A0743775E941D4A85CAF6EA4AFB7F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>racha</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[racha]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>racha</remote-alias>
+              <ordinal>9</ordinal>
+              <family>dfFinal.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>241</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dfFinal.csv_64A0743775E941D4A85CAF6EA4AFB7F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>presMax</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[presMax]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>presMax</remote-alias>
+              <ordinal>10</ordinal>
+              <family>dfFinal.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>233</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dfFinal.csv_64A0743775E941D4A85CAF6EA4AFB7F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>presMin</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[presMin]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>presMin</remote-alias>
+              <ordinal>11</ordinal>
+              <family>dfFinal.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>237</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dfFinal.csv_64A0743775E941D4A85CAF6EA4AFB7F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>sol</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[sol]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>sol</remote-alias>
+              <ordinal>12</ordinal>
+              <family>dfFinal.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>89</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dfFinal.csv_64A0743775E941D4A85CAF6EA4AFB7F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tmedStd</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[tmedStd]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tmedStd</remote-alias>
+              <ordinal>13</ordinal>
+              <family>dfFinal.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>241</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dfFinal.csv_64A0743775E941D4A85CAF6EA4AFB7F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tminStd</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[tminStd]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tminStd</remote-alias>
+              <ordinal>14</ordinal>
+              <family>dfFinal.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>241</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dfFinal.csv_64A0743775E941D4A85CAF6EA4AFB7F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tmaxStd</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[tmaxStd]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tmaxStd</remote-alias>
+              <ordinal>15</ordinal>
+              <family>dfFinal.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>241</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dfFinal.csv_64A0743775E941D4A85CAF6EA4AFB7F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>dirStd</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[dirStd]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>dirStd</remote-alias>
+              <ordinal>16</ordinal>
+              <family>dfFinal.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>241</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dfFinal.csv_64A0743775E941D4A85CAF6EA4AFB7F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>velmediaStd</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[velmediaStd]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>velmediaStd</remote-alias>
+              <ordinal>17</ordinal>
+              <family>dfFinal.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>241</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dfFinal.csv_64A0743775E941D4A85CAF6EA4AFB7F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>rachaStd</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[rachaStd]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>rachaStd</remote-alias>
+              <ordinal>18</ordinal>
+              <family>dfFinal.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>241</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dfFinal.csv_64A0743775E941D4A85CAF6EA4AFB7F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>presMaxStd</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[presMaxStd]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>presMaxStd</remote-alias>
+              <ordinal>19</ordinal>
+              <family>dfFinal.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>240</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dfFinal.csv_64A0743775E941D4A85CAF6EA4AFB7F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>presMinStd</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[presMinStd]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>presMinStd</remote-alias>
+              <ordinal>20</ordinal>
+              <family>dfFinal.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>240</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dfFinal.csv_64A0743775E941D4A85CAF6EA4AFB7F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>solStd</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[solStd]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>solStd</remote-alias>
+              <ordinal>21</ordinal>
+              <family>dfFinal.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>90</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dfFinal.csv_64A0743775E941D4A85CAF6EA4AFB7F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>festividad</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[festividad]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>festividad</remote-alias>
+              <ordinal>22</ordinal>
+              <family>dfFinal.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[dfFinal.csv_64A0743775E941D4A85CAF6EA4AFB7F5]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#9c755f'>
+              <bucket>&quot;[federated.1c7e4xn0t7zkg810z0yjt1t3gywp].[sum:Total viajeros:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1c7e4xn0t7zkg810z0yjt1t3gywp].[usr:Total viajeros (copia)_1218786651152556032:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;España&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <default-sorts>
+        <manual-sort column='[none:Forecast Indicator:nk]' direction='ASC'>
+          <dictionary>
+            <bucket>&quot;Actual&quot;</bucket>
+            <bucket>&quot;Estimación&quot;</bucket>
+          </dictionary>
+        </manual-sort>
+      </default-sorts>
+      <filter class='categorical' column='[yr:fecha:ok]' filter-group='2'>
+        <groupfilter from='2000' function='range' level='[yr:fecha:ok]' to='2019' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+      </filter>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='dfFinal.csv' id='dfFinal.csv_64A0743775E941D4A85CAF6EA4AFB7F5'>
+            <properties context=''>
+              <relation connection='textscan.14s6vep09xgj9713ffbxp0ricv71' name='dfFinal.csv' table='[dfFinal#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_GB' separator=','>
+                  <column datatype='date' name='fecha' ordinal='0' />
+                  <column datatype='real' name='Total viajeros' ordinal='1' />
+                  <column datatype='integer' name='mes_x' ordinal='2' />
+                  <column datatype='integer' name='ano_x' ordinal='3' />
+                  <column datatype='real' name='tmed' ordinal='4' />
+                  <column datatype='real' name='tmin' ordinal='5' />
+                  <column datatype='real' name='tmax' ordinal='6' />
+                  <column datatype='real' name='dir' ordinal='7' />
+                  <column datatype='real' name='velmedia' ordinal='8' />
+                  <column datatype='real' name='racha' ordinal='9' />
+                  <column datatype='real' name='presMax' ordinal='10' />
+                  <column datatype='real' name='presMin' ordinal='11' />
+                  <column datatype='real' name='sol' ordinal='12' />
+                  <column datatype='real' name='tmedStd' ordinal='13' />
+                  <column datatype='real' name='tminStd' ordinal='14' />
+                  <column datatype='real' name='tmaxStd' ordinal='15' />
+                  <column datatype='real' name='dirStd' ordinal='16' />
+                  <column datatype='real' name='velmediaStd' ordinal='17' />
+                  <column datatype='real' name='rachaStd' ordinal='18' />
+                  <column datatype='real' name='presMaxStd' ordinal='19' />
+                  <column datatype='real' name='presMinStd' ordinal='20' />
+                  <column datatype='real' name='solStd' ordinal='21' />
+                  <column datatype='integer' name='mes_y' ordinal='22' />
+                  <column datatype='integer' name='ano_y' ordinal='23' />
+                  <column datatype='real' name='festividad' ordinal='24' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='predict' inline='true' name='federated.0qkqquv0ed1mwi104lmwv0tkebtn' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='predict' name='textscan.0qc3nyr1xr1k9y1a03jml0v9jk89'>
+            <connection class='textscan' directory='D:/TFM/metro/metroAnalisis/data' filename='predict.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0qc3nyr1xr1k9y1a03jml0v9jk89' name='predict.csv' table='[predict#csv]' type='table'>
+          <columns character-set='UTF-8' header='no' locale='en_GB' separator=','>
+            <column datatype='date' name='F1' ordinal='0' />
+            <column datatype='real' name='F2' ordinal='1' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0qc3nyr1xr1k9y1a03jml0v9jk89' name='predict.csv' table='[predict#csv]' type='table'>
+          <columns character-set='UTF-8' header='no' locale='en_GB' separator=','>
+            <column datatype='date' name='F1' ordinal='0' />
+            <column datatype='real' name='F2' ordinal='1' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[predict.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='debit-close-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='debit-open-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;false&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F1</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[F1]</local-name>
+            <parent-name>[predict.csv]</parent-name>
+            <remote-alias>F1</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[predict.csv_59A4665FE42F4430826488FC70EDCB18]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>F2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[F2]</local-name>
+            <parent-name>[predict.csv]</parent-name>
+            <remote-alias>F2</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[predict.csv_59A4665FE42F4430826488FC70EDCB18]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[sum:F2:qk]&quot;' value='Volumen total' />
+          <alias key='&quot;[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[usr:Calculation_1218786651160285187:qk]&quot;' value='Máximo' />
+          <alias key='&quot;[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[usr:maxPredic (copia)_1218786651160825860:qk]&quot;' value='Mínimo' />
+        </aliases>
+      </column>
+      <column caption='colores' datatype='string' name='[Calculation_1218786651158102017]' role='dimension' type='nominal'>
+        <calculation class='tableau' formula='if [F1] &gt; date(&quot;2019-12-31&quot;) then &apos;red&apos; else &apos;blue&apos; end' />
+      </column>
+      <column caption='maxPredic' datatype='real' name='[Calculation_1218786651160285187]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='max([F2])' />
+      </column>
+      <column datatype='real' name='[F2]' role='measure' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='predict.csv' datatype='table' name='[__tableau_internal_object_id__].[predict.csv_59A4665FE42F4430826488FC70EDCB18]' role='measure' type='quantitative' />
+      <column caption='minPred' datatype='real' name='[maxPredic (copia)_1218786651160825860]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='min([F2])' />
+      </column>
+      <column-instance column='[Calculation_1218786651158102017]' derivation='None' name='[none:Calculation_1218786651158102017:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Forecast Indicator]' derivation='None' forecast-column-base='[Forecast Indicator]' forecast-column-type='forecast-indicator' name='[none:Forecast Indicator:nk]' pivot='key' type='nominal' />
+      <column-instance column='[F2]' derivation='Sum' name='[sum:F2:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1218786651160285187]' derivation='User' name='[usr:Calculation_1218786651160285187:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[maxPredic (copia)_1218786651160825860]' derivation='User' name='[usr:maxPredic (copia)_1218786651160825860:qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='es_ES' class='hyper' dbname='D:/TFM/metro/metroAnalisis/tableau/predict.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='02/12/2022 09:14:21 AM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='predict' increment-value='%null%' refresh-type='create' rows-inserted='252' timestamp-start='2022-02-12 09:14:21.323' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>F1</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[F1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F1</remote-alias>
+              <ordinal>0</ordinal>
+              <family>predict.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>252</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[predict.csv_59A4665FE42F4430826488FC70EDCB18]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>F2</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[F2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>F2</remote-alias>
+              <ordinal>1</ordinal>
+              <family>predict.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>250</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[predict.csv_59A4665FE42F4430826488FC70EDCB18]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Calculation_1218786651158102017:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;blue&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;red&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;España&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <default-sorts>
+        <manual-sort column='[none:Forecast Indicator:nk]' direction='ASC'>
+          <dictionary>
+            <bucket>&quot;Actual&quot;</bucket>
+            <bucket>&quot;Estimación&quot;</bucket>
+          </dictionary>
+        </manual-sort>
+      </default-sorts>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='predict.csv' id='predict.csv_59A4665FE42F4430826488FC70EDCB18'>
+            <properties context=''>
+              <relation connection='textscan.0qc3nyr1xr1k9y1a03jml0v9jk89' name='predict.csv' table='[predict#csv]' type='table'>
+                <columns character-set='UTF-8' header='no' locale='en_GB' separator=','>
+                  <column datatype='date' name='F1' ordinal='0' />
+                  <column datatype='real' name='F2' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='calendarioMadrid' inline='true' name='federated.11n924m1oy7pbn13sfbf1176gi1h' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='calendarioMadrid' name='textscan.029ss9z1f3ujt213quqqi1eumaz0'>
+            <connection class='textscan' directory='D:/TFM/metro/metroAnalisis/data' filename='calendarioMadrid.csv' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.029ss9z1f3ujt213quqqi1eumaz0' name='calendarioMadrid.csv' table='[calendarioMadrid#csv]' type='table'>
+          <columns character-set='windows-1252' header='yes' locale='en_GB' separator=','>
+            <column datatype='date' name='Día' ordinal='0' />
+            <column datatype='string' name='Día_semana' ordinal='1' />
+            <column datatype='string' name='laborable / festivo / domingo festivo' ordinal='2' />
+            <column datatype='string' name='Tipo de Festivo' ordinal='3' />
+            <column datatype='string' name='Festividad' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.029ss9z1f3ujt213quqqi1eumaz0' name='calendarioMadrid.csv' table='[calendarioMadrid#csv]' type='table'>
+          <columns character-set='windows-1252' header='yes' locale='en_GB' separator=','>
+            <column datatype='date' name='Día' ordinal='0' />
+            <column datatype='string' name='Día_semana' ordinal='1' />
+            <column datatype='string' name='laborable / festivo / domingo festivo' ordinal='2' />
+            <column datatype='string' name='Tipo de Festivo' ordinal='3' />
+            <column datatype='string' name='Festividad' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[calendarioMadrid.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;windows-1252&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;£&quot;</attribute>
+              <attribute datatype='string' name='debit-close-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='debit-open-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Día</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Día]</local-name>
+            <parent-name>[calendarioMadrid.csv]</parent-name>
+            <remote-alias>Día</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[calendarioMadrid.csv_54AEBE9C7CEF44439855BEFCF4FCBEE4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Día_semana</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Día_semana]</local-name>
+            <parent-name>[calendarioMadrid.csv]</parent-name>
+            <remote-alias>Día_semana</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[calendarioMadrid.csv_54AEBE9C7CEF44439855BEFCF4FCBEE4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>laborable / festivo / domingo festivo</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[laborable / festivo / domingo festivo]</local-name>
+            <parent-name>[calendarioMadrid.csv]</parent-name>
+            <remote-alias>laborable / festivo / domingo festivo</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[calendarioMadrid.csv_54AEBE9C7CEF44439855BEFCF4FCBEE4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tipo de Festivo</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Tipo de Festivo]</local-name>
+            <parent-name>[calendarioMadrid.csv]</parent-name>
+            <remote-alias>Tipo de Festivo</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[calendarioMadrid.csv_54AEBE9C7CEF44439855BEFCF4FCBEE4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Festividad</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Festividad]</local-name>
+            <parent-name>[calendarioMadrid.csv]</parent-name>
+            <remote-alias>Festividad</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[calendarioMadrid.csv_54AEBE9C7CEF44439855BEFCF4FCBEE4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Día semana' datatype='string' name='[Día_semana]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='calendarioMadrid.csv' datatype='table' name='[__tableau_internal_object_id__].[calendarioMadrid.csv_54AEBE9C7CEF44439855BEFCF4FCBEE4]' role='measure' type='quantitative' />
+      <column caption='Laborable / Festivo / Domingo Festivo' datatype='string' name='[laborable / festivo / domingo festivo]' role='dimension' type='nominal' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' authentication='auth-none' author-locale='es_ES' class='hyper' dbname='D:/TFM/metro/metroAnalisis/tableau/calendarioMadrid.hyper' default-settings='yes' schema='Extract' sslmode='' tablename='Extract' update-time='02/12/2022 09:14:49 AM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <refresh>
+            <refresh-event add-from-file-path='calendarioMadrid' increment-value='%null%' refresh-type='create' rows-inserted='3773' timestamp-start='2022-02-12 09:14:49.041' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Día</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Día]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Día</remote-alias>
+              <ordinal>0</ordinal>
+              <family>calendarioMadrid.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>3773</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Día_semana</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Día_semana]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Día_semana</remote-alias>
+              <ordinal>1</ordinal>
+              <family>calendarioMadrid.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>laborable / festivo / domingo festivo</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[laborable / festivo / domingo festivo]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>laborable / festivo / domingo festivo</remote-alias>
+              <ordinal>2</ordinal>
+              <family>calendarioMadrid.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Tipo de Festivo</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Tipo de Festivo]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Tipo de Festivo</remote-alias>
+              <ordinal>3</ordinal>
+              <family>calendarioMadrid.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Festividad</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Festividad]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Festividad</remote-alias>
+              <ordinal>4</ordinal>
+              <family>calendarioMadrid.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>34</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RGB' />
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;España&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='calendarioMadrid.csv' id='calendarioMadrid.csv_54AEBE9C7CEF44439855BEFCF4FCBEE4'>
+            <properties context=''>
+              <relation connection='textscan.029ss9z1f3ujt213quqqi1eumaz0' name='calendarioMadrid.csv' table='[calendarioMadrid#csv]' type='table'>
+                <columns character-set='windows-1252' header='yes' locale='en_GB' separator=','>
+                  <column datatype='date' name='Día' ordinal='0' />
+                  <column datatype='string' name='Día_semana' ordinal='1' />
+                  <column datatype='string' name='laborable / festivo / domingo festivo' ordinal='2' />
+                  <column datatype='string' name='Tipo de Festivo' ordinal='3' />
+                  <column datatype='string' name='Festividad' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='Hoja 4'>
+      <table>
+        <view>
+          <datasources />
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{8951B7B1-E2AE-4E1E-BF54-9645ECDCAEB7}' />
+    </worksheet>
+    <worksheet name='acVSpa'>
+      <layout-options>
+        <title>
+          <formatted-text />
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='predict' name='federated.0qkqquv0ed1mwi104lmwv0tkebtn' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0qkqquv0ed1mwi104lmwv0tkebtn'>
+            <column caption='colores' datatype='string' name='[Calculation_1218786651158102017]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='if [F1] &gt; date(&quot;2019-12-31&quot;) then &apos;red&apos; else &apos;blue&apos; end' />
+            </column>
+            <column datatype='date' name='[F1]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[F2]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_1218786651158102017]' derivation='None' name='[none:Calculation_1218786651158102017:nk]' pivot='key' type='nominal' />
+            <column-instance column='[F1]' derivation='None' name='[none:F1:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[F2]' derivation='Sum' name='[sum:F2:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[F1]' derivation='Month-Trunc' name='[tmn:F1:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[none:F1:qk]' included-values='in-range'>
+            <min>#2019-01-01#</min>
+            <max>#2020-12-01#</max>
+          </filter>
+          <slices>
+            <column>[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[none:F1:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='display' class='0' field='[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[tmn:F1:qk]' scope='cols' value='false' />
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[sum:F2:qk]' field-type='quantitative' scope='rows' type='space' />
+            <format attr='display' class='0' field='[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[sum:F2:qk]' scope='rows' value='false' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[none:Calculation_1218786651158102017:nk]' />
+              <text column='[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[tmn:F1:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>&#10;&lt;</run>
+                <run>[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[tmn:F1:qk]</run>
+                <run>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-mode' value='selection' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[sum:F2:qk]</rows>
+        <cols>[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[tmn:F1:qk]</cols>
+        <mark-labels>
+          <mark-label id='0' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[tmn:F1:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[sum:F2:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[none:Calculation_1218786651158102017:nk]</field>
+                  <field>[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[sum:F2:qk]</field>
+                  <field>[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[tmn:F1:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;blue&quot;</value>
+                <value>109.41200000000001</value>
+                <value>#2019-10-01 00:00:00#</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-47' y='-14' />
+          </mark-label>
+          <mark-label id='1' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[tmn:F1:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[sum:F2:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[none:Calculation_1218786651158102017:nk]</field>
+                  <field>[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[sum:F2:qk]</field>
+                  <field>[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[tmn:F1:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;red&quot;</value>
+                <value>107.81522564907443</value>
+                <value>#2020-10-01 00:00:00#</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='65' y='-3' />
+          </mark-label>
+          <mark-label id='2' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[tmn:F1:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[sum:F2:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[none:Calculation_1218786651158102017:nk]</field>
+                  <field>[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[sum:F2:qk]</field>
+                  <field>[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[tmn:F1:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;red&quot;</value>
+                <value>63.527202982783479</value>
+                <value>#2020-08-01 00:00:00#</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='46' y='-14' />
+          </mark-label>
+          <mark-label id='3' label-state='on'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[tmn:F1:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[sum:F2:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[none:Calculation_1218786651158102017:nk]</field>
+                  <field>[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[sum:F2:qk]</field>
+                  <field>[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[tmn:F1:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>&quot;blue&quot;</value>
+                <value>59.271999999999998</value>
+                <value>#2019-08-01 00:00:00#</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='-43' y='2' />
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{A262DA3C-B5CC-43CE-942C-AF3FB97C944F}' />
+    </worksheet>
+    <worksheet name='ant'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Máximo</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='predict' name='federated.0qkqquv0ed1mwi104lmwv0tkebtn' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0qkqquv0ed1mwi104lmwv0tkebtn'>
+            <column caption='colores' datatype='string' name='[Calculation_1218786651158102017]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='if [F1] &gt; date(&quot;2019-12-31&quot;) then &apos;red&apos; else &apos;blue&apos; end' />
+            </column>
+            <column caption='maxPredic' datatype='real' name='[Calculation_1218786651160285187]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='max([F2])' />
+            </column>
+            <column datatype='date' name='[F1]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[F2]' role='measure' type='quantitative' />
+            <column caption='minPred' datatype='real' name='[maxPredic (copia)_1218786651160825860]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='min([F2])' />
+            </column>
+            <column-instance column='[Calculation_1218786651158102017]' derivation='None' name='[none:Calculation_1218786651158102017:nk]' pivot='key' type='nominal' />
+            <column-instance column='[F2]' derivation='Sum' name='[sum:F2:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1218786651160285187]' derivation='User' name='[usr:Calculation_1218786651160285187:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[maxPredic (copia)_1218786651160825860]' derivation='User' name='[usr:maxPredic (copia)_1218786651160825860:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[F1]' derivation='Year' name='[yr:F1:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[sum:F2:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[usr:Calculation_1218786651160285187:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[usr:maxPredic (copia)_1218786651160825860:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[sum:F2:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[usr:Calculation_1218786651160285187:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[usr:maxPredic (copia)_1218786651160825860:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[none:Calculation_1218786651158102017:nk]'>
+            <groupfilter function='member' level='[none:Calculation_1218786651158102017:nk]' member='&quot;blue&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[yr:F1:ok]'>
+            <groupfilter function='member' level='[yr:F1:ok]' member='2019' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[none:Calculation_1218786651158102017:nk]</column>
+            <column>[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[:Measure Names]</column>
+            <column>[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[yr:F1:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[:Measure Names]' value='176' />
+            <format attr='color' value='#e15759' />
+            <format attr='color' field='[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[Multiple Values]' value='#4e79a7' />
+            <format attr='font-weight' field='[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[Multiple Values]' value='normal' />
+            <format attr='text-format' field='[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[Multiple Values]' value='n#,##0.00;-#,##0.00' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height' field='[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[:Measure Names]' value='44' />
+            <format attr='border-width' data-class='subtotal' value='0' />
+            <format attr='border-style' data-class='subtotal' value='none' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[:Measure Names]' value='#4e79a7' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='subtotal' value='0' />
+            <format attr='border-style' data-class='subtotal' value='none' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[Multiple Values]' />
+              <lod column='[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[:Measure Names]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='20'>&lt;</run>
+                <run bold='true' fontsize='20'>[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[Multiple Values]</run>
+                <run bold='true' fontsize='20'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{02CF06DA-FAB2-4860-8DB1-A44A91BFD838}' />
+    </worksheet>
+    <worksheet name='hist'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>Histórico de volumen de pasajeros</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='dfFinal' name='federated.1c7e4xn0t7zkg810z0yjt1t3gywp' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1c7e4xn0t7zkg810z0yjt1t3gywp'>
+            <column datatype='real' name='[Total viajeros]' role='measure' type='quantitative' />
+            <column caption='Fecha' datatype='date' name='[fecha]' role='dimension' type='ordinal' />
+            <column-instance column='[fecha]' derivation='None' name='[none:fecha:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Total viajeros]' derivation='Sum' name='[sum:Total viajeros:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[fecha]' derivation='Month-Trunc' name='[tmn:fecha:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1c7e4xn0t7zkg810z0yjt1t3gywp].[none:fecha:qk]' included-values='in-range'>
+            <min>#2010-02-01#</min>
+            <max>#2019-12-01#</max>
+          </filter>
+          <slices>
+            <column>[federated.1c7e4xn0t7zkg810z0yjt1t3gywp].[none:fecha:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' domain-expand='false' field='[federated.1c7e4xn0t7zkg810z0yjt1t3gywp].[sum:Total viajeros:qk]' field-type='quantitative' scope='rows' type='space' />
+            <format attr='title' class='0' field='[federated.1c7e4xn0t7zkg810z0yjt1t3gywp].[tmn:fecha:qk]' scope='cols' value='Fecha' />
+            <format attr='display' class='0' field='[federated.1c7e4xn0t7zkg810z0yjt1t3gywp].[tmn:fecha:qk]' scope='cols' value='false' />
+            <format attr='display' class='0' field='[federated.1c7e4xn0t7zkg810z0yjt1t3gywp].[sum:Total viajeros:qk]' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1c7e4xn0t7zkg810z0yjt1t3gywp].[:Measure Names]' />
+              <text column='[federated.1c7e4xn0t7zkg810z0yjt1t3gywp].[sum:Total viajeros:qk]' />
+              <text column='[federated.1c7e4xn0t7zkg810z0yjt1t3gywp].[tmn:fecha:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run>&lt;</run>
+                <run>[federated.1c7e4xn0t7zkg810z0yjt1t3gywp].[sum:Total viajeros:qk]</run>
+                <run>&gt;&#10;</run>
+                <run><![CDATA[<[federated.1c7e4xn0t7zkg810z0yjt1t3gywp].[tmn:fecha:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-mode' value='range' />
+                <format attr='size' value='0.75762432813644409' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1c7e4xn0t7zkg810z0yjt1t3gywp].[sum:Total viajeros:qk]</rows>
+        <cols>[federated.1c7e4xn0t7zkg810z0yjt1t3gywp].[tmn:fecha:qk]</cols>
+        <mark-labels>
+          <mark-label id='0'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1c7e4xn0t7zkg810z0yjt1t3gywp].[tmn:fecha:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1c7e4xn0t7zkg810z0yjt1t3gywp].[sum:Total viajeros:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1c7e4xn0t7zkg810z0yjt1t3gywp].[sum:Total viajeros:qk]</field>
+                  <field>[federated.1c7e4xn0t7zkg810z0yjt1t3gywp].[tmn:fecha:qk]</field>
+                  <field>[federated.1c7e4xn0t7zkg810z0yjt1t3gywp].[:Measure Names]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>109.41200000000001</value>
+                <value>#2019-10-01 00:00:00#</value>
+                <value>&quot;[federated.1c7e4xn0t7zkg810z0yjt1t3gywp].[sum:Total viajeros:qk]&quot;</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='23' y='-57' />
+          </mark-label>
+          <mark-label id='1'>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields>
+                    <field>[federated.1c7e4xn0t7zkg810z0yjt1t3gywp].[tmn:fecha:qk]</field>
+                  </x-fields>
+                  <y-fields>
+                    <field>[federated.1c7e4xn0t7zkg810z0yjt1t3gywp].[sum:Total viajeros:qk]</field>
+                  </y-fields>
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1c7e4xn0t7zkg810z0yjt1t3gywp].[sum:Total viajeros:qk]</field>
+                  <field>[federated.1c7e4xn0t7zkg810z0yjt1t3gywp].[tmn:fecha:qk]</field>
+                  <field>[federated.1c7e4xn0t7zkg810z0yjt1t3gywp].[:Measure Names]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>48.478999999999999</value>
+                <value>#2013-08-01 00:00:00#</value>
+                <value>&quot;[federated.1c7e4xn0t7zkg810z0yjt1t3gywp].[sum:Total viajeros:qk]&quot;</value>
+              </tuple>
+            </tuple-reference>
+            <label-position x='52' y='11' />
+          </mark-label>
+        </mark-labels>
+      </table>
+      <simple-id uuid='{0AEC8FA4-9D8A-44BB-9EDA-D29FA60E8DC8}' />
+    </worksheet>
+    <worksheet name='min'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Máximo</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='predict' name='federated.0qkqquv0ed1mwi104lmwv0tkebtn' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0qkqquv0ed1mwi104lmwv0tkebtn'>
+            <column caption='colores' datatype='string' name='[Calculation_1218786651158102017]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='if [F1] &gt; date(&quot;2019-12-31&quot;) then &apos;red&apos; else &apos;blue&apos; end' />
+            </column>
+            <column datatype='date' name='[F1]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[F2]' role='measure' type='quantitative' />
+            <column-instance column='[F2]' derivation='Min' name='[min:F2:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1218786651158102017]' derivation='None' name='[none:Calculation_1218786651158102017:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[none:Calculation_1218786651158102017:nk]'>
+            <groupfilter function='member' level='[none:Calculation_1218786651158102017:nk]' member='&quot;red&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[none:Calculation_1218786651158102017:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[min:F2:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{7EAC2D9C-D388-4EE0-AFE7-AA452917A36A}' />
+    </worksheet>
+    <worksheet name='porx'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Máximo</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='predict' name='federated.0qkqquv0ed1mwi104lmwv0tkebtn' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0qkqquv0ed1mwi104lmwv0tkebtn'>
+            <column caption='colores' datatype='string' name='[Calculation_1218786651158102017]' role='dimension' type='nominal'>
+              <calculation class='tableau' formula='if [F1] &gt; date(&quot;2019-12-31&quot;) then &apos;red&apos; else &apos;blue&apos; end' />
+            </column>
+            <column caption='maxPredic' datatype='real' name='[Calculation_1218786651160285187]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='max([F2])' />
+            </column>
+            <column datatype='date' name='[F1]' role='dimension' type='ordinal' />
+            <column datatype='real' name='[F2]' role='measure' type='quantitative' />
+            <column caption='minPred' datatype='real' name='[maxPredic (copia)_1218786651160825860]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='min([F2])' />
+            </column>
+            <column-instance column='[Calculation_1218786651158102017]' derivation='None' name='[none:Calculation_1218786651158102017:nk]' pivot='key' type='nominal' />
+            <column-instance column='[F2]' derivation='Sum' name='[sum:F2:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1218786651160285187]' derivation='User' name='[usr:Calculation_1218786651160285187:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[maxPredic (copia)_1218786651160825860]' derivation='User' name='[usr:maxPredic (copia)_1218786651160825860:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[sum:F2:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[usr:Calculation_1218786651160285187:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[usr:maxPredic (copia)_1218786651160825860:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[sum:F2:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[usr:Calculation_1218786651160285187:qk]&quot;</bucket>
+              <bucket>&quot;[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[usr:maxPredic (copia)_1218786651160825860:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[none:Calculation_1218786651158102017:nk]'>
+            <groupfilter function='member' level='[none:Calculation_1218786651158102017:nk]' member='&quot;red&quot;' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[none:Calculation_1218786651158102017:nk]</column>
+            <column>[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[:Measure Names]' value='176' />
+            <format attr='color' value='#e15759' />
+            <format attr='text-format' field='[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[Multiple Values]' value='n#,##0.00;-#,##0.00' />
+            <format attr='text-format' field='[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[sum:F2:qk]' value='n#,##0.00;-#,##0.00' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='height' field='[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[:Measure Names]' value='44' />
+            <format attr='border-width' data-class='subtotal' value='0' />
+            <format attr='border-style' data-class='subtotal' value='none' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' field='[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[:Measure Names]' value='#4e79a7' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='subtotal' value='0' />
+            <format attr='border-style' data-class='subtotal' value='none' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[Multiple Values]' />
+              <lod column='[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[:Measure Names]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true' fontsize='20'>&lt;</run>
+                <run bold='true' fontsize='20'>[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[Multiple Values]</run>
+                <run bold='true' fontsize='20'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{2360AA0A-99F3-460A-8E1E-6620C2313EF9}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='14' param='horz' type-v2='layout-flow' w='92000' x='4000' y='1000'>
+            <zone h='98000' id='8' type-v2='layout-basic' w='92000' x='4000' y='1000'>
+              <zone h='13500' id='3' is-scaled='1' param='D:/TFM/metro/metroAnalisis/images/mad1.jpg' type-v2='bitmap' w='92000' x='4000' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='17125' id='7' name='hist' w='92000' x='4000' y='81875'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='60750' id='15' type-v2='empty' w='92000' x='4000' y='21125'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='6625' id='18' type-v2='empty' w='92000' x='4000' y='14500'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='98000' id='26' type-v2='empty' w='3200' x='800' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='98000' id='27' type-v2='empty' w='3200' x='96000' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone h='36375' id='16' name='acVSpa' w='91400' x='4500' y='43750' />
+        <zone h='18000' id='17' name='porx' show-title='false' w='44400' x='51500' y='25875' />
+        <zone h='17375' id='19' name='ant' show-title='false' w='42800' x='3800' y='26625' />
+        <zone h='4625' id='20' type-v2='text' w='15700' x='18300' y='16125'>
+          <formatted-text>
+            <run fontcolor='#4e79a7' fontsize='24'>Año actual</run>
+          </formatted-text>
+        </zone>
+        <zone forceUpdate='true' h='4625' id='21' type-v2='text' w='19500' x='66700' y='16000'>
+          <formatted-text>
+            <run fontcolor='#e15759' fontsize='24'>Próximo año</run>
+          </formatted-text>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1000' minheight='1000' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='29' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='28' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='100' h='13500' id='3' is-fixed='true' is-scaled='1' param='D:/TFM/metro/metroAnalisis/images/mad1.jpg' type-v2='bitmap' w='92000' x='4000' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone forceUpdate='true' h='4625' id='21' type-v2='text' w='19500' x='66700' y='16000'>
+                  <formatted-text>
+                    <run fontcolor='#e15759' fontsize='24'>Próximo año</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='4625' id='20' type-v2='text' w='15700' x='18300' y='16125'>
+                  <formatted-text>
+                    <run fontcolor='#4e79a7' fontsize='24'>Año actual</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='144' h='18000' id='17' is-fixed='true' name='porx' show-title='false' w='44400' x='51500' y='25875'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='139' h='17375' id='19' is-fixed='true' name='ant' show-title='false' w='42800' x='3800' y='26625'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='36375' id='16' is-fixed='true' name='acVSpa' w='91400' x='4500' y='43750'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='129' h='17125' id='7' is-fixed='true' name='hist' w='92000' x='4000' y='81875'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{BE7B56B2-8F03-42D4-A5B2-46E8FCBD3B18}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='72'>
+    <window class='worksheet' name='hist'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='175'>
+            <card pane-specification-id='2' param='[federated.1c7e4xn0t7zkg810z0yjt1t3gywp].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{31EF4247-72A3-40C0-91F2-D7F6385B91A4}' />
+    </window>
+    <window class='worksheet' name='acVSpa'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='175'>
+            <card pane-specification-id='0' param='[federated.0qkqquv0ed1mwi104lmwv0tkebtn].[none:Calculation_1218786651158102017:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E66D208A-1EC5-45AC-8EA5-C1724DB2805D}' />
+    </window>
+    <window class='worksheet' name='porx'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{9A822AA0-CA55-4448-9F37-62D5239E03E3}' />
+    </window>
+    <window class='worksheet' name='ant'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{9A186F92-9A5B-42B0-8B71-27E608BEFF1D}' />
+    </window>
+    <window class='worksheet' name='min'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{DB120231-D632-456E-B3EE-DB5664C708FB}' />
+    </window>
+    <window class='worksheet' name='Hoja 4'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{29261306-5C85-4382-9220-E8EFBA3A36A7}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='acVSpa'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='ant'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='hist'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='porx'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{67F6C903-7866-4E37-86A6-5F5372FE5DB9}' />
+    </window>
+  </windows>
+</workbook>
